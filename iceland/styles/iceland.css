@@ -1,0 +1,68 @@
+body {
+    background-image: url(../images/landmannalaugar.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: auto;
+   
+}
+
+.main {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 24px;
+}
+
+.information__div {
+    background-color: darkslategray;
+    border-radius: 10px;
+    height: 600px;
+    width: auto;
+    margin: 8px;
+    padding: 24px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hike-one {
+    background: rgba(207, 59, 170, 0.3);
+    color: #000000;
+}
+  
+.hike-two {
+    background-image: url(../images/foss.jpeg);
+}
+
+.hike-three {
+    background-image: url(../images/auroraiceland.jpeg);
+}
+
+.hike-four {
+    background: rgba(62, 201, 187, 0.3);
+}
+
+.hike-five {
+    background: rgba(239, 194, 46, 0.3);
+}
+
+.hike-six {
+    background-image: url(../images/blacksand.jpeg);
+}
+
+.hike-seven {
+    background-image: url(../images/hveragerdi.jpeg);
+}
+
+.hike-eight {
+    background: rgba(85, 58, 11, 0.3);
+}
+  
+
+
+@media screen and (min-width: 768px) {
+    .main {
+        grid-template-columns: 1fr 1fr;
+        
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../mainstyles/main.css">
+    <link rel="stylesheet" href="./styles/contactpage.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__page-title">Contact us</h1>
+    </header>
+    <ul>
+        <li><a href="../iceland/iceland.html">Home</a></li>
+        <li><a href="../hemsida/hemsida.html">Landmannalaugar</a></li>
+        <li><a href="../home/index.html">Gallery</a></li>
+        <li><a class="active" href="../contact/contactpage.html">Contact</a></li>       
+    </ul>
+<main>
+    <section class="main-content">
+        <div class="fuckingimage">
+            <form action="mailto: someone@gmail.com" enctype="text/plain" method="POST" class="user__form">
+                <fieldset>
+                    <legend>Personal information</legend>
+                    <label for="user-name">Please enter your name</label>
+                    <input type="text" name="user-name" id="user-name" placeholder="" required>
+
+                    <lable for="user-age">Please enter your email</lable>
+                    <input type="text" id="user-email" name="user-email" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your message</legend>
+                    <label for="user-message">Enter your message below</label>
+                    <textarea id="user-message" class="user-message" name="user-message" required></textarea>
+                </fieldset>
+                <button>Submit form!</button>
+            </form>
+        </div>
+    </section>
+</main>
+    <footer class="footer">
+        <p>Create a Website Assignment by Caroline Lindbom 2024</p>
+    </footer>    
+</body>
+</html>

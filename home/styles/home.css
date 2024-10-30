@@ -1,0 +1,79 @@
+.main-content {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2px;
+    justify-content: center;
+}
+
+.main-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 300px;
+    width: 350px;
+    padding: 24px;
+    margin: 10px;
+    background-size: cover;
+    border-radius: 14px;
+    box-shadow: 5px 10px 8px #2b2929;
+    background-position: center;
+}
+
+.left-img {
+    background-image: url(../images/reykjavik_night.jpeg);
+}
+
+.center-img {
+    background-image: url(../images/landmannalaugar.jpeg);
+}
+
+.right-img {
+    background-image: url(../images/glymur_new.jpeg);
+}
+
+.second-left-img {
+    background-image: url(../images/blacksandbeach.jpeg);
+}
+
+.second-center-img {
+    background-image: url(../images/volcano.jpeg);
+}
+
+.second-right-img {
+    background-image: url(../images/lavarocks.jpeg);
+}
+
+@media screen and (min-width: 768px) {
+    .main-content {
+        display: grid;
+        grid-template-rows: auto;
+        gap: 1px;
+        align-items: center;
+        grid-template-areas: 
+        "left center right";
+        padding: 10px;
+    }
+
+    .main-image {
+        width: 100%;
+    }
+
+    .main-box {
+        height: 500px;
+        width: 300px;
+    }
+
+    .left-img {
+        grid-area: left;
+    }
+
+    .center-img {
+        grid-area: center;
+    }
+
+    .right-img {
+        grid-area: right;
+        object-fit: contain;
+    }
+    
+} 
+    
